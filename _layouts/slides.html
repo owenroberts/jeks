@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>{{page.title}} - Week {{page.week}} - {{page.dek}}</title>
+	<title>{{site.class}} - Week {{page.week}} - {{page.title}}</title>
 	{% include meta.html %}
 	{% include base.html %}
 	{% include slides.html %}
@@ -9,7 +9,7 @@
 <body>
 	<div id="container" class="outline language-js">
 		<div id="title" class="slide">
-			<h1>{{page.dek}}</h1>
+			<h1>{{page.title}}</h1>
 			<p><a href="{{site.url}}{{site.baseurl}}/">MEA 300</a> > <a href="{{site.url}}{{site.baseurl}}/schedule.html#week-{{page.week}}">Week {{page.week}}</a></p>
 		</div>
 		{{ content }}
